@@ -15,7 +15,8 @@ class App(tornado.web.Application):
         handlers = [
             ('/', main.IndexHandler),
             ('/explore', main.ExploreHandler),
-            ('/post/(?P<post_id>[0-9]+)', main.PostHandler)
+            ('/post/(?P<post_id>[0-9]+)', main.PostHandler),
+            ('/upload', main.UploadHandler)
 
         ]
 
